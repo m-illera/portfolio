@@ -5,33 +5,38 @@ Secondary Color (Sage): #A5A58D;
 Secondary Color (Brown): #6D432C;
 Accent Color (Mint): #B7B7A4;
 */
+* {
+  box-sizing: border-box;
+}
+
 body {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px; /* Sets the font size to 16px */
-    font-weight: 300; /* Sets the font weight to 300 */
-    line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
-    color: #1D2408;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px; /* Sets the font size to 16px */
+  font-weight: 300; /* Sets the font weight to 300 */
+  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  color: #1D2408;
 }
 
 h1, h2, h3, h4 {
-    line-height: 1.4;
+  line-height: 1.4;
 }
 h1 {
-    font-size: 2.75em;
-    font-weight: 700;
+  font-size: 2.75em;
+  font-weight: 700;
+  text-align: center;
 }
 h2 {
-    font-size: 2.25em;
-    font-weight: 700;
+  font-size: 2.25em;
+  font-weight: 700;
 }
   
 h3 {
-    font-size: 1.75em;
-    font-weight: 400;
+  font-size: 1.75em;
+  font-weight: 400;
 }
 h4 {
-    font-size: 1.35em;
-    font-weight: 400;
+  font-size: 1.35em;
+  font-weight: 400;
 }
 
 img {
@@ -39,45 +44,142 @@ img {
 }
 
 a {
-    color: #ffffff;
-    text-decoration: none; /* No underlining */
-  }
-  a:visited { /* visited link */
-    color: #ffffff;
-  }
-  a:hover {
-    color: #b7b7a4;
-    text-decoration: underline; /* Underlining when hovering over a link */
-  }
-  a:focus {
-    color: #b7b7a4;
-    text-decoration: underline;
-  }
-  a:active { /* selected link */
-    color: #525747;
-  }
+  color: #ffffff;
+  text-decoration: none; /* No underlining */
+}
+a:visited { /* visited link */
+  color: #ffffff;
+}
+a:hover {
+  color: #b7b7a4;
+  text-decoration: underline; /* Underlining when hovering over a link */
+}
+a:focus {
+  color: #b7b7a4;
+  text-decoration: underline;
+}
+a:active { /* selected link */
+  color: #525747;
+}
 
-  .button {
-    display: inline-block; 
-    background-color: #525747;
-    color: #ffffff; 
-    font-weight: 400;
-    padding: 10px;
-    border-radius: 3px;
-    border-bottom: 2px solid #000000; 
-    transition: 0.2s opacity;
-  }
-  .button:hover {
-    opacity: 0.8; /* Reduces the opacity of the button to 80% */
-    text-decoration: none;
-  }
-  .button.contact {
-    background-color: transparent;
-    color: #525747;
-    text-transform: uppercase;
-    border: 2px solid #525747;
-  }
-  .button.contact:hover {
-    background-color: #525747;
-    color: #ffffff;
-  }
+.button {
+ display: inline-block; 
+ background-color: #525747;
+ color: #ffffff; 
+ font-weight: 400;
+ padding: 10px;
+ border-radius: 3px;
+ border-bottom: 2px solid #000000; 
+ transition: 0.2s opacity;
+}
+.button:hover {
+  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+ }
+.button.contact {
+ background-color: transparent;
+ color: #525747;
+ text-transform: uppercase;
+ border: 2px solid #525747;
+}
+.button.contact:hover {
+  background-color: #525747;
+  color: #ffffff;
+}
+
+/* Layout styling */
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+
+#work .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
+
+#hero h1 {
+  text-align: center; /* Centers text */
+}
+
+#work h2 {
+  text-align: center;
+}
+
+center {
+  text-align: center;
+}
+
+.logo {
+  max-width: 250px;
+}
+
+.icon {
+  max-width: 150px;
+}
+
+header {
+  background-color: #ffe4c4;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  width: [object Object]px; 
+	height: [object Object]px; 
+	background: #ffe4c4; 
+	border: solid #BDBDBD 1px; 
+	box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.3)  ; 
+	-webkit-box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.3)  ; 
+	-moz-box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.3)  ; 
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
+}
+
+nav > ul > li > a:visited {
+  color: #525747;
+}
+
+nav {
+  display: inline-block;
+  width: 100%;
+}
+
+#hero {
+  background-color: #ffe4c4;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+main {
+  padding-top: 133px;
+}
+
+#work {
+  background-color: #ffe4c4;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+footer {
+  background-color: #ffe4c4;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+}
+
