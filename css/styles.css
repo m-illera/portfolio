@@ -1,6 +1,6 @@
 /*
 Colors used:
-Primary Color (Green): #525747;
+Primary Color (Green): ;
 Secondary Color (Sage): #A5A58D;
 Secondary Color (Brown): #6D432C;
 Accent Color (Mint): #B7B7A4;
@@ -128,7 +128,6 @@ center {
 
 header {
   background-color: #A5A58D;
-  text-align: center;
   padding: 10px 0;
   position: fixed;
   width: 100%;
@@ -141,11 +140,8 @@ header {
 
 nav > ul {
   list-style-type: none;
-  padding: 20px;
-}
-
-nav > ul > li {
-  display: inline-block;
+  padding: 0px;
+  margin: 0;
 }
 
 nav > ul > li > a {
@@ -159,9 +155,34 @@ nav > ul > li > a:visited {
   color: #525747;
 }
 
-nav {
-  display: inline-block;
-  width: 100%;
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid  #2e2e2e;
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
 }
 
 #hero {
@@ -172,7 +193,7 @@ nav {
 }
 
 main {
-  padding-top: 133px;
+  padding-top: 125px;
 }
 
 #work {
@@ -202,6 +223,22 @@ Medium devices (640px and larger)
     width: auto;
     float: right;
     margin-top: 4px;
+  }
+
+  nav > ul {
+    margin: 1em 0;
+  }
+
+  nav > ul > li {
+    display: inline-block;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
   }
 
   body {
