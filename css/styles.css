@@ -106,11 +106,24 @@ a:active { /* selected link */
   text-align: center;
 }
 
+
 #work h3 {
   text-align: left;
 }
 
 #work p {
+  text-align: left;
+}
+
+#about-work h2 {
+  text-align: left;
+}
+
+#about-work h3 {
+  text-align: left;
+}
+
+#about-work p {
   text-align: left;
 }
 
@@ -120,6 +133,9 @@ center {
 
 .logo {
   max-width: 250px;
+}
+.photo {
+  max-width: 757px;
 }
 
 .icon {
@@ -198,9 +214,19 @@ main {
 
 #work {
   background-color: #A5A58D;
-  padding: 20px 0;
+  padding: 20px 0px;
   display: inline-block;
   width: 100%;
+  
+}
+
+#about-work {
+  background-color: #A5A58D;
+  padding: 20px 0px;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  
 }
 
 footer {
@@ -208,6 +234,17 @@ footer {
   text-align: center;
   padding: 10px 0;
   position: relative;
+}
+
+#photo {
+  background-color: #A5A58D;
+  padding: 20px 0px;
+  display: inline-block;
+  text-align: center;
+}
+
+ul > li {
+  text-align: left;
 }
 
 /* ==============================
@@ -272,6 +309,7 @@ Medium devices (640px and larger)
   #about-page h3 { margin-top: 0;}
 }
 
+
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
@@ -305,7 +343,7 @@ X-large devices (1440px or larger)
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #6D432C;
+  border-bottom: 2px solid #1a1a1a;
   transition: 0.2s opacity;
 }
 
